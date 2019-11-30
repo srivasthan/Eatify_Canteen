@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eatify.sale.eatifysale"
+    android:installLocation="preferExternal">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".globalfiles.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitiyfiles.ScanQrPage" />
+        <activity
+            android:name=".activitiyfiles.EntryScreen"
+            android:label="@string/title_activity_entry_screnn"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Scan" />
+        <activity android:name=".activitiyfiles.New_payment" />
+        <activity android:name=".activitiyfiles.Workshop_Register"/>
+    </application>
+
+</manifest>
